@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>_7.27_RatingsStyle</title>
+    <link href="lib/winjs-4.0.1/css/ui-light.css" rel="stylesheet" />
+    <script src="lib/winjs-4.0.1/js/base.js"></script>
+    <script src="lib/winjs-4.0.1/js/ui.js"></script>
+    <link href="css/default.css" rel="stylesheet" />
+    <script src="js/main.js"></script>
+</head>
+<body class="win-type-body">
+    <table class="twoColumnGridContainer-ControlList">
+        <tr>
+            <td>
+                Customize star color
+                <div class="detail">
+                    .win-rating .win-star.win-user.win-full{color: rgba(216, 172, 10, 1.0);}
+                </div>
+            </td>
+            <td>
+                <div class="differentRatingColor" data-win-control="WinJS.UI.Rating" data-win-options="{averageRating: 3.4, userRating: 4}">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Customize Star size
+                <div class="detail">
+                    .win-rating .win-star{font-size: 34px;}
+                </div>
+            </td>
+            <td>
+                <div class="bigRating" data-win-control="WinJS.UI.Rating" data-win-options="{averageRating: 3.4, userRating: 4}">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Small size for non-interactive display
+                <div class="detail">
+                    class="win-small"
+                </div>
+            </td>
+            <td>
+                <div class="win-small" data-win-control="WinJS.UI.Rating" data-win-options="{averageRating: 3.4, disabled: true}">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Replace the star
+                <div class="detail">
+                    .win-rating .win-star:before{content:"";}<br />
+                    .win-rating .win-star{background-image:...}
+                </div>
+            </td>
+            <td>
+                <div class="heart" data-win-control="WinJS.UI.Rating" data-win-options="{averageRating: 3.4}">
+                </div>
+                <br />
+                <br />
+                <div class="pepper" data-win-control="WinJS.UI.Rating" data-win-options="{averageRating: 3.4}">
+                </div>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
